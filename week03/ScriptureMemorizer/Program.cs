@@ -1,3 +1,7 @@
+// EXCEEDING REQUIREMENTS:
+// This program was enhanced to only hide words that are not already hidden.
+// This improves the memorization experience by ensuring new words are hidden
+// each time instead of randomly selecting already hidden words.
 using System;
 
 class Program
