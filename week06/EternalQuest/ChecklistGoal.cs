@@ -13,21 +13,21 @@ public class ChecklistGoal : Goal
     }
 
     public override int RecordEvent()
-{
-    if (_count < _target)
     {
-        _count++;
-
-        if (_count == _target)
+        if (_count < _target)
         {
-            return _points + _bonus;
+            _count++;
+
+            if (_count == _target)
+            {
+                return _points + _bonus;
+            }
+
+            return _points;
         }
 
-        return _points;
+        return 0;
     }
-
-    return 0;
-}
 
     public override bool IsComplete()
     {
